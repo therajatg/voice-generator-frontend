@@ -33,7 +33,7 @@ export default function VoiceGenerationForm({
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Type or paste the text you want to convert to speech..."
-          className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500 transition-colors resize-y min-h-[120px]"
+          className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500 transition-colors resize-y min-h-30 text-black"
           required
           disabled={isLoading}
         />
