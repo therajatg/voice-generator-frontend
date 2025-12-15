@@ -4,7 +4,7 @@ import StatusBadge from "./components/StatusBadge";
 import AudioPlayer from "./components/AudioPlayer";
 import HistoryList from "./components/HistoryList";
 import { voiceGenerationAPI } from "./services/api";
-import type { VoiceGeneration, VoiceGenerationStatus } from "./types";
+import type { VoiceGeneration } from "./types";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
