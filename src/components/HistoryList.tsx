@@ -22,8 +22,17 @@ export default function HistoryList({ generations }: HistoryListProps) {
             <span className="capitalize">{generation.status}</span>
           </div>
           {generation.audio_url && (
-            <audio controls className="w-full mt-2">
+            // <audio controls className="w-full mt-2">
+            //   <source src={generation.audio_url} type="audio/mpeg" />
+            // </audio>
+            <audio
+              key={generation.audio_url}
+              controls
+              className="w-full"
+              preload="metadata"
+            >
               <source src={generation.audio_url} type="audio/mpeg" />
+              Your browser does not support the audio element.
             </audio>
           )}
         </div>
