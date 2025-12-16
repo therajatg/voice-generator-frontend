@@ -3,6 +3,7 @@ interface AudioPlayerProps {
 }
 
 export default function AudioPlayer({ audioUrl }: AudioPlayerProps) {
+  console.log("audioUrl", audioUrl);
   return (
     <div className="space-y-3">
       <h3 className="text-lg font-semibold text-gray-800">Generated Audio:</h3>
